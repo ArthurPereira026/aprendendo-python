@@ -6,4 +6,6 @@
 - Variáveis
 - tipos de dados
     - int
-    - string 
+    - string
+    - float
+    - boolean
