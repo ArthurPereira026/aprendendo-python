@@ -21,4 +21,4 @@ if frequencia > 0:
             else:
                 print("Reprovado")
 else:
-    print("Aluno nunca veio a aula")  
+    print("Aluno nunca veio a aula")
