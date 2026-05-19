@@ -9,3 +9,5 @@
     - string
     - float
     - boolean
+
+algebra
