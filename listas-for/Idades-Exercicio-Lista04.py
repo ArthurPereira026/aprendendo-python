@@ -1,7 +1,7 @@
 listaIdades = []
 listaMaior = []
 listaMenor = []
-continuar = input("Podemos começar a Intrevista? (s/n): ").upper()[0]
+continuar = input("Podemos começar a entrevista? (s/n): ").upper()[0]
 
 while continuar == "S" or continuar == "C":
     ano = int(input(f"Digite o seu ano de nascimento aq: "))
@@ -17,6 +17,6 @@ for x in listaIdades:
     else:
         listaMaior.append(calculo)
 
-print(f"Lista de anos dos intrevistados {listaIdades} Quantidade de intrevistados:{len(listaIdades)} ")
+print(f"Lista de anos dos entrevistados {listaIdades} Quantidade de entrevistados:{len(listaIdades)} ")
 print(f"Idade dos anos de Maior idade {listaMaior} quantidade de Maior Idade: {len(listaMaior)}")
 print(f"Idade dos anos menores de Idade {listaMenor} Quantidade de Menor idade: {len(listaMenor)}")
