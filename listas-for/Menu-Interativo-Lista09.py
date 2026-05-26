@@ -31,6 +31,9 @@ while opcao == "S":
     elif opcao == 4:
         numero = float(input("Digite seu numero: "))
         numero2 = float(input("Digite o segundo numero: "))
+        if numero2 == 0:
+            print("Nenhum número pode ser divisivel por 0")
+            numero2 = float(input("Digite um segundo número válido: "))
         print(numero / numero2)
         opcao = input("Quer continuar? (s/n) ").upper()[0]
 
