@@ -1,6 +1,4 @@
-opcao = input("Deseja usar essa calculadora? (s/n) ").upper()[0]
-
-while opcao == "S":
+while True:
     print("1 = Soma")
     print("2 = Subtrair")
     print("3 = Multiplicar")
