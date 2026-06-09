@@ -18,8 +18,7 @@ while True:
     linha,coluna = input("Mire ultilizando a linha e a coluna separando por virgula: ").split(",")
     linha = int(linha)-1
     coluna = int(coluna)-1
-    if linha and coluna == 'N':
+    if oceano[linha][coluna] == 'N':
         print("Você Afundou o Navio")
         break
-    else:
-        linha, coluna = input("Ops voçê errou, Que tal tentar novamente: ").split(",")
+    print("Ops voçê errou, Que tal tentar novamente: ")
