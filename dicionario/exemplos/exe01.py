@@ -11,15 +11,22 @@ dados_pessoais = {
 
 
 dados_pessoais["peso"] = 70
-nova_chave, novo_valor = input("Digite uma nova chave e valor separado por (,) ou atualize algum dado existente: ").split(",")
-dados_pessoais[nova_chave] = novo_valor
 
-print(dados_pessoais.keys())
+
+
 
 continuar = "s"
+novo = input("Deseja adicionar algum valor novo ao seus dados pessoais? (s/n) ").lower()[0]
 
+while novo == "s":
+
+    nova_chave, novo_valor = input("Digite uma nova chave e valor separado por (,) ou atualize algum dado existente: ").split(",")
+    dados_pessoais[nova_chave] = novo_valor
+    novo = input("Deseja continuar (s/n): ").lower()[0]
 
 while continuar == "s":
+
+    print(dados_pessoais.keys())
     dados = input("Digite o dado que deseja procurar aq: ")
     print(dados_pessoais.get(dados,"Dado não encontrado"))
     continuar = input("Deseja continuar (s/n): ").lower()[0]
