@@ -4,8 +4,8 @@ estoque = {
     "Monitor": 8
 }
 print(estoque)
-continuar = "s"
-while continuar == "s":
+continuar = "continuar"
+while continuar == "continuar":
     nome, quantidade = input("""
      Bem Vindos a Café impresso ☕
      Digite o Nome do Produto e a Quantidade que deseja comprar,
@@ -29,7 +29,7 @@ while continuar == "s":
         for chave, valor in estoque.items():
             print(f"{chave} -> {valor}")
 
-    continuar = input("Desejas Continuar a sua compra ou quer ir para o carrinho? (s/n): ").lower()
+    continuar = input("Desejas Continuar a sua compra ou quer ir para o carrinho? (continuar/carrinho): ").lower()
 else:
     print("Agradecemos por comprar na Café impresso ☕")
 
